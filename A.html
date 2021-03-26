@@ -1,0 +1,636 @@
+<html>
+<head>
+<title></title></head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#a
+{
+background-color:380931;
+margin-top:-10px;
+font-size:20px;
+ background-size: 220px 80px;
+line-height: 40px;
+padding-left: 60px;
+color:white;
+
+  
+}
+.faltu{
+
+  font-size:20px;
+  margin-left:150px
+}
+.boot{
+  color:white;
+  margin-left:150px;
+  margin-top:60px;
+}
+.boots{
+
+  margin-left:50%;
+  margin-top:65px;
+}
+.card{
+backgroind-color:green;
+
+}
+a:link {
+  text-decoration: none;
+  color: red;
+}
+
+
+
+a:hover {
+  text-decoration: underline;
+color:non;
+}
+
+a:active {
+  text-decoration: underline;
+color:red;
+}
+.fa {
+
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: red;
+  color: white;
+  margin-left:390px;
+  
+}
+
+
+.fa-twitter {
+  background: red;
+  color: white;
+}
+.fa-instagram {  
+  background: #125688;  
+  color: white;  
+}  
+.fa-youtube {  
+  background: #bb0000;  
+  color: white;  
+}  
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 3px solid B87D22;
+  margin-left:100px;
+  margin-top:20px;
+  
+}
+.b{
+
+ background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid blue;
+  perspective: 1000px; 
+  margin-top:20px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+.flip-card-back {
+  background-color: 63625E;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-car {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+  
+  margin-top:-205px;
+  margin-left:315px;
+  
+}
+
+
+
+.flip-card-inne {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-car:hover .flip-card-inne {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-fron, .flip-card-bac {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-fron {
+  background-color: C01896;
+  color: black;
+}
+a{
+color:#5D6D7E;}
+
+
+.flip-card-bac {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+* {box-sizing:border-box}
+
+
+.slideshow-container {
+  width: 1500px;
+  position: relative;
+  margin: auto;
+  margin-top:30px;
+ 
+  
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -20px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.content{
+//border-redius:12px;
+border: 0px solid red;
+height:500px;
+width:100%;
+
+margin-top:60px;
+background-color:black;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<body>
+
+<h1 id="a"><a  href="https://www.shivaconceptsolution.com/liveclass/"> Live Class Demo </a>    ||   <a href="https://www.shivaconceptsolution.com/digital/"> E-Learning </a>
+   || <a href="https://www.shivaconceptsolution.com/ereg/"> 
+ Online Registration   </a> || <a href="https://www.kangaroosoftware.net/" > Internship  </a>
+<a href="" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>  
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>  Helpline:- +919685157290
+</h1>
+
+<a style="color:"#DDA0DD" href=" file:///C:/Users/Lenovo/Desktop/A.html"><img src="file:///C:/Users/Lenovo/Downloads/logol.png" style="height:100px;width:130px;margin-top:-30px"> </a>
+<h1 style="color:#DDA0DD; text-align:right; font-size:15px;margin-right:20px;margin-top:-60px"> <a style="color:"#DDA0DD" href=" file:///C:/Users/Lenovo/Desktop/A.html">Home </a> || <a style="color:"#DDA0DD" href=" file:///C:/Users/Lenovo/Desktop/A.html">Aboutus </a> 
+|| <a style="color:"#DDA0DD" href=" file:///C:/Users/Lenovo/Desktop/A.html">Job Alert </a> ||
+<a style="color:"#DDA0DD" href=" file:///C:/Users/Lenovo/Desktop/A.html">Certification </a> || <a style="color:"#DDA0DD" href=" file:///C:/Users/Lenovo/Desktop/A.html">Courses </a> </h1>
+
+
+<div class="slideshow-container">
+
+  
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="file:///C:/Users/Lenovo/Downloads/img%205.jpg" style="width:100%; height:400px">
+    <div class="text">JOIN NOW</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="file:///C:/Users/Lenovo/Downloads/img0.png" style="width:100%; height:400px">
+    <div class="text">JOIN NOW</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="file:///C:/Users/Lenovo/Downloads/img%205.jpg" style="width:100%; height:400px">
+    <div class="text">JOIN NOW</div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="file:///C:/Users/Lenovo/Downloads/two.png" alt="Avatar" style="width:195px;height:195px;">
+    </div>
+    <div class="flip-card-back">
+   <h1>C</h1>
+      <p>50% off</p>
+      <p>JOIN NOW</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="file:///C:/Users/Lenovo/Downloads/java.png" alt="Avatar" style="width:195px;height:195px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>JAVA</h1>
+      <p>10% off</p>
+      <p>JOIN NOW</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="file:///C:/Users/Lenovo/Downloads/node-js-emblem-vector-28501403.jpg" alt="Avatar" style="width:195px;height:195px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>JAVA SCRIPT</h1>
+      <p>20% off</p>
+      <p>JOIN NOW</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="file:///C:/Users/Lenovo/Downloads/391-3917813_html-css-icon-html-css-logo-png-transparent.png" alt="Avatar" style="width:195px;height:195px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>HTML + CSS</h1>
+      <p>30% off</p>
+      <p>JOIN NOW</p>
+    </div>
+  </div>
+</div>
+
+<div style="height=4000px;width:1000px;margin-left:450px;margin-top:-850px;">
+ 
+  <h1 style="">POPULAR COURSES</h1>
+
+ <img src="file:///C:/Users/Lenovo/Downloads/hdoop.webp" style="height:200px; width:200px;">
+<h1 style="font-size:15px;">BIG DATA - HADOOP</h1>
+<p style="">Upgrade your programming skills in </br> Big Data – Hadoop with Prestige </br> Point where you will get trained by<br/> the industry expert. Hadoop is an </br>open-source software framework for storing data.</p>
+
+    
+ <img src="file:///C:/Users/Lenovo/Downloads/angu.png" style="height:200px; width:200px;">
+  <h1 style="font-size:15px;">ANGULAR</h1>
+<p style="">AngularJS extends HTML with new attributes.</br>
+ AngularJS is perfect for Single Page </br>
+Applications (SPAs). AngularJS is easy to</br>
+ learn. Start learning AngularJS with Prestige</br>
+ Point.</p>
+
+<div style="margin-left:500px;margin-top:-700px;">
+<img src="file:///C:/Users/Lenovo/Downloads/java.png" style="height:200px; width:200px;">
+  <h1 style="font-size:15px;">JAVA</h1>
+<p style="">Java is object oriented programming </br>
+language used to develop mobile</br>
+ apps, web apps, desktop apps,</br>
+ games and much more. Prestige Point</br>
+ is the best institute for Java programming
+ language.</p>
+
+<img src="file:///C:/Users/Lenovo/Downloads/android.jpeg" style="height:200px; width:200px;">
+  <h1 style="font-size:15px;">ANDROID</h1>
+<p style="">Android is a mobile operating system</br>
+ developed by Google. It is based on</br>
+ a modified version of the Linux kernel </br>
+and other open source software. Learn</br>
+ Android App Development.</p>
+</div>
+
+</div>
+
+
+
+
+<div style="border: 0px solid red;
+height:500px;
+width:100%;
+
+margin-top:80px;
+background-color:30242D; ">
+<div style=" content: "";
+  display: table;
+  clear: both;">
+<div style=" float: left;
+  width: 60%;
+  margin-top:60px;
+  margin-left:300px;
+  padding: 10px;
+  height: 300px;
+  color:white;">
+<d style="font-size:26px; font-weight: bold; margin-left:0px; padding-top:50px; ">WHY CHOOSE US:</d>
+<p>LUCKY POINT is the best institute for JAVA PHP ANDROID AND PYTHON Training in Indore, CORE JAVA and ADVANCE JAVA Training Institute in Indore, DIGITAL MARKETING Training institute in Indore & Software Testing Training.</p>
+
+<p>We at LUCKY point have more than 18 year experience with team of great and expert faculties in all the streams like PHP, JAVA, ANDROID, BIG DATA and PYTHON  provide certification and job oriented training for engineering students.
+
+<p>We also provide corporate and industrial training in indore and also SEO internship in indore. We give live project industrial training with INDUSTRY EXPOSER. These software training programs is helpful for fresher BCA, B.Sc(IT), BE / B.Tech, M.E/ M.Tech,M.Sc(IT) , MCA students and working professional.
+ We expertise in best training to our students in Python Technology in Indore, Software Testing Training, and Android Training Institute.</p>
+
+<p>We are TOP 3 TRAINING INSTITUTE IN INDORE for PHP, JAVA, BIG DATA, HIBERNATE, SEO , Digital Marketing, and Software Testing .
+Because of our consistent good placement record we got 5 out of 5 rating from Urbanpro.com and 4.5 out of 5 from JustDial.com & Lucky.com</p>
+
+<p>Therefore we are the Best Institute for JAVA PHP ANDROID PYTHON</p>
+</div>
+</div>
+</div>
+
+<div style="margin-left:400px;margin-top:100px;">
+
+<h2 style="margin-left:200px;">
+UPCOMING BATCHES</h2>
+
+<table style="width:60%;">
+ 
+  <tr>
+    <th>Cours (Online Training)</th>
+    <th>Date</th> 
+    <th>Time</th>
+  </tr>
+
+  <tr>
+    <td>Corporate Core Java</td>
+    <td>6th July</td>
+    <td>4:30</td>
+  </tr>
+  <tr>
+    <td> Java</td>
+    <td>6th July</td>
+    <td>4:30</td>
+  </tr>
+  <tr>
+    <td>Python</td>
+    <td>6th July</td>
+    <td>8:30</td>
+  </tr>
+  <tr>
+    <td>PHP</td>
+    <td>6th July</td>
+    <td>9:30</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>6th July</td>
+    <td>6:30</td>
+  </tr>
+
+<tr>
+    <td>C++</td>
+    <td>6th July</td>
+    <td>3:30</td>
+  </tr>
+
+<tr>
+    <td>Corporate Core Java</td>
+    <td>6th July</td>
+    <td>4:30</td>
+  </tr>
+
+<tr>
+    <td>Wordpress</td>
+    <td>6th July</td>
+    <td>1:30</td>
+  </tr>
+
+<tr>
+    <td>Corporate Core Java</td>
+    <td>6th July</td>
+    <td>4:30</td>
+  </tr>
+
+<tr>
+    <td>C#</td>
+    <td>	6th July</td>
+    <td>9:30</td>
+  </tr>
+
+</table>
+
+</div>
+
+
+
+<div class="content">
+<div class="row">
+  <div class="column" style="background-color:black;">
+    <h2 class="boot">About Us</h2>
+    <p class="boot">LUCKY POINT is a best Software Training Institute of Indore India, We are 10 years old institute and trained more than 10000+ Students,we are commited to providing Quality Training with Affordable Fee structure and 100% placement assistance.</p>
+  </div>
+  <div class="column" style="background-color:black;">
+    <h2 class="boot">Quick Links</h2>
+<div class="faltu">
+    <p class="boots">
+<h5><a style="color:"#DDA0DD" href=" file:///C:/Users/Lenovo/Desktop/A.html">Home </a> </h5>
+<h5> <a style="color:"#DDA0DD" href=" file:///C:/Users/Lenovo/Desktop/A.html">Aboutus </a></h5> 
+<h5> <a style="color:"#DDA0DD" href=" file:///C:/Users/Lenovo/Desktop/A.html">Job Alert </a> </h5>
+<h5><a style="color:"#DDA0DD" href=" file:///C:/Users/Lenovo/Desktop/A.html">Certification </a> <h5>
+ 
+</p>
+</div>
+  </div>
+   <div class="column" style="background-color:black;">
+    <h2 class="boot">Contact us</h2>
+    <p class="boot">Palasia | Vijaynagar | Bhawarkua Indrapuri, Indore, MP - 452001 | Helpline - +919685157290
+
+Phone : 0731-4069788 | 4907880 | 4994662</p>
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+<script>
+function myFunction() {
+  location.replace("file:///C:/Users/Lenovo/Desktop/A.html")
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
